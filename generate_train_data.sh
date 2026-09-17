@@ -1,0 +1,5 @@
+python test_case_generate.py
+python generate_model_train_data.py
+python fix_model_train_data.py
+python verify_model_train_data.py
+python mix_train_data.py

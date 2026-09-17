@@ -1,0 +1,5 @@
+python test_case_generate_for_test.py
+python generate_model_test_data.py
+python fix_model_test_data.py
+python verify_model_test_data.py
+python mix_test_data.py

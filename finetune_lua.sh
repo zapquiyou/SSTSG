@@ -1,0 +1,14 @@
+accelerate launch finetune_modify.py \
+        --model_id "bigcode/starcoder2-3b" \
+        --dataset_name "bigcode/the-stack-dedup" \
+        --subset "data/lua" \
+        --dataset_text_field "content" \
+        --split "train" \
+        --max_seq_length 1024 \
+        --max_steps 10000 \
+        --micro_batch_size 1 \
+        --gradient_accumulation_steps 8 \
+        --learning_rate 2e-5 \
+        --warmup_steps 20 \
+        --num_proc "$(nproc)" \
+        --save_steps 5000
